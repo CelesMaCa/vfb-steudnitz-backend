@@ -5,7 +5,7 @@ services:
     image: strapi/strapi
     container_name: strapi_service
     restart: unless-stopped
-    env_file: base.env
+    env_file: .env
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
       DATABASE_NAME: ${DATABASE_NAME}
@@ -26,7 +26,7 @@ services:
     image: mongo
     container_name: mongo_service
     restart: unless-stopped
-    env_file: base.env
+    env_file: .env
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
