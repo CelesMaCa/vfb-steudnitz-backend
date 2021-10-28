@@ -20,15 +20,13 @@
     "strapi-plugin-email": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-i18n": "3.6.8",
-    "strapi-connector-bookshelf": "3.6.8",
-    "knex": "0.21.18",
-    "sqlite3": "5.0.0"
+    "strapi-connector-mongoose": "3.6.8"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "734e0901-4ced-4aa5-bdbb-35dafb7c2a7a"
+    "uuid": "851b62a2-c211-428e-8dc8-7c9941b9fcf6"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
