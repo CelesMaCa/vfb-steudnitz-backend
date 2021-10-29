@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kontakts",
+  "info": {
+    "name": "Kontakt"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "Vorname": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "Rolle": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "EMail": {
+      "type": "email"
+    },
+    "Telefon": {
+      "type": "string",
+      "maxLength": 15
+    },
+    "adresse": {
+      "model": "adresse"
+    }
+  }
+}
