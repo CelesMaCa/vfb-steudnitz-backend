@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oeffnungszeitens",
+  "info": {
+    "name": "Öffnungszeiten",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Wochentag": {
+      "type": "enumeration",
+      "enum": [
+        "Montag",
+        "Dienstag",
+        "Mittwoch",
+        "Donnerstag",
+        "Freitag",
+        "Samstag",
+        "Sonntag"
+      ],
+      "required": true
+    },
+    "UhrzeitBeginn": {
+      "type": "time"
+    },
+    "UhrzeitEnde": {
+      "type": "time"
+    },
+    "Ruhetag": {
+      "type": "boolean",
+      "required": true
+    },
+    "restaurant": {
+      "model": "restaurant"
+    }
+  }
+}

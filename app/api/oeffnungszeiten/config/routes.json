@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oeffnungszeitens",
+      "handler": "oeffnungszeiten.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oeffnungszeitens/count",
+      "handler": "oeffnungszeiten.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oeffnungszeitens/:id",
+      "handler": "oeffnungszeiten.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oeffnungszeitens",
+      "handler": "oeffnungszeiten.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oeffnungszeitens/:id",
+      "handler": "oeffnungszeiten.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oeffnungszeitens/:id",
+      "handler": "oeffnungszeiten.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
