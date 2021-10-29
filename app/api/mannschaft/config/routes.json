@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mannschafts",
+      "handler": "mannschaft.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mannschafts/count",
+      "handler": "mannschaft.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mannschafts/:id",
+      "handler": "mannschaft.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mannschafts",
+      "handler": "mannschaft.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mannschafts/:id",
+      "handler": "mannschaft.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mannschafts/:id",
+      "handler": "mannschaft.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

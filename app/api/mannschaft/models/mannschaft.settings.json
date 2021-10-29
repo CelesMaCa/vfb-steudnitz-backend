@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mannschafts",
+  "info": {
+    "name": "Mannschaft"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sportarten": {
+      "model": "sportarten"
+    },
+    "MName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "MTitel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "Kurzbeschreibung": {
+      "type": "richtext",
+      "required": false,
+      "maxLength": 500
+    },
+    "Beschreibung": {
+      "type": "richtext",
+      "required": true
+    },
+    "Bilder": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Liga": {
+      "type": "string"
+    },
+    "API": {
+      "type": "string"
+    },
+    "Extras": {
+      "type": "richtext"
+    }
+  }
+}
