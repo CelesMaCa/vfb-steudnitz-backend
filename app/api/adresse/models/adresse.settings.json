@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adresses",
+  "info": {
+    "name": "Adresse"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Strasse": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "Hausnummer": {
+      "type": "integer"
+    },
+    "Postleitzahl": {
+      "type": "string",
+      "maxLength": 5,
+      "required": true
+    },
+    "Ort": {
+      "type": "string",
+      "maxLength": 30,
+      "required": true
+    }
+  }
+}
