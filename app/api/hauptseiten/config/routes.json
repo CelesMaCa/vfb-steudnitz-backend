@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hauptseitens",
+      "handler": "hauptseiten.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hauptseitens/count",
+      "handler": "hauptseiten.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hauptseitens/:id",
+      "handler": "hauptseiten.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hauptseitens",
+      "handler": "hauptseiten.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hauptseitens/:id",
+      "handler": "hauptseiten.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hauptseitens/:id",
+      "handler": "hauptseiten.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

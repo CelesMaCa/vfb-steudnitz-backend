@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hauptseitens",
+  "info": {
+    "name": "Hauptseiten"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HName": {
+      "type": "richtext",
+      "maxLength": 50,
+      "required": true
+    },
+    "HTitel": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 50
+    }
+  }
+}
