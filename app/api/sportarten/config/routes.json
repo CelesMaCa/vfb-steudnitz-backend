@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sportartens",
+      "handler": "sportarten.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sportartens/count",
+      "handler": "sportarten.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sportartens/:id",
+      "handler": "sportarten.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sportartens",
+      "handler": "sportarten.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sportartens/:id",
+      "handler": "sportarten.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sportartens/:id",
+      "handler": "sportarten.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

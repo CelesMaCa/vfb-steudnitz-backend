@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sportartens",
+  "info": {
+    "name": "Sportarten"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "STitel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "hauptseiten": {
+      "model": "hauptseiten"
+    }
+  }
+}
