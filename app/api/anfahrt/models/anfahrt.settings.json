@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anfahrts",
+  "info": {
+    "name": "Anfahrt"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Formular": {
+      "type": "richtext"
+    },
+    "Beschreibung": {
+      "type": "richtext",
+      "required": true
+    },
+    "adresse": {
+      "model": "adresse"
+    }
+  }
+}

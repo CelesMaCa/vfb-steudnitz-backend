@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/anfahrts",
+      "handler": "anfahrt.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/anfahrts/count",
+      "handler": "anfahrt.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/anfahrts/:id",
+      "handler": "anfahrt.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/anfahrts",
+      "handler": "anfahrt.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/anfahrts/:id",
+      "handler": "anfahrt.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/anfahrts/:id",
+      "handler": "anfahrt.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
