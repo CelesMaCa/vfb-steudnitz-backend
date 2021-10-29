@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trainingszeits",
+  "info": {
+    "name": "Trainingszeit"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Wochentag": {
+      "type": "enumeration",
+      "enum": [
+        "Montag",
+        "Dienstag",
+        "Mittwoch",
+        "Donnerstag",
+        "Freitag",
+        "Samstag",
+        "Sonntag"
+      ],
+      "required": true
+    },
+    "UhrzeitBeginn": {
+      "type": "time",
+      "required": true
+    },
+    "UhrzeitEnde": {
+      "type": "time"
+    },
+    "mannschaft": {
+      "model": "mannschaft"
+    },
+    "Extras": {
+      "type": "string",
+      "maxLength": 20
+    }
+  }
+}
