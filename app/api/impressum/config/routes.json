@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/impressums",
+      "handler": "impressum.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/impressums/count",
+      "handler": "impressum.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/impressums/:id",
+      "handler": "impressum.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/impressums",
+      "handler": "impressum.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/impressums/:id",
+      "handler": "impressum.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/impressums/:id",
+      "handler": "impressum.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

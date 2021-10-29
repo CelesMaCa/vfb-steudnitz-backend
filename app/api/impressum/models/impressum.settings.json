@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "impressums",
+  "info": {
+    "name": "Impressum"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Haftungsausschuss": {
+      "type": "richtext",
+      "required": true
+    },
+    "Datenschutz": {
+      "type": "richtext",
+      "required": true
+    },
+    "kontakt": {
+      "model": "kontakt"
+    }
+  }
+}
