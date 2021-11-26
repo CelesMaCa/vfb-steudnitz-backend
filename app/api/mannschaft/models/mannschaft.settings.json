@@ -55,6 +55,9 @@
     },
     "kontakt": {
       "model": "kontakt"
+    },
+    "adresse": {
+      "model": "adresse"
     }
   }
 }

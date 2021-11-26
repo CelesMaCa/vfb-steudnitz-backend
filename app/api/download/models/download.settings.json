@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "downloads",
+  "info": {
+    "name": "Download"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "Beschreibung": {
+      "type": "richtext",
+      "required": true
+    },
+    "Inhalt": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Downloadbar": {
+      "type": "boolean"
+    }
+  }
+}
