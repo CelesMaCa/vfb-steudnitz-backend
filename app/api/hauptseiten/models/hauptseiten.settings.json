@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "hauptseitens",
   "info": {
-    "name": "Hauptseiten"
+    "name": "Hauptseiten",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,14 +13,10 @@
   "pluginOptions": {},
   "attributes": {
     "HName": {
-      "type": "richtext",
-      "maxLength": 50,
-      "required": true
+      "type": "string"
     },
     "HTitel": {
-      "type": "richtext",
-      "required": true,
-      "maxLength": 50
+      "type": "string"
     }
   }
 }
