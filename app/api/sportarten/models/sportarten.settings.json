@@ -24,6 +24,10 @@
     },
     "Kurzbeschreibung": {
       "type": "richtext"
+    },
+    "mannschafts": {
+      "via": "sportarten",
+      "collection": "mannschaft"
     }
   }
 }

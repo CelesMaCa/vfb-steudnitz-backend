@@ -24,6 +24,10 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "offnungszeitens": {
+      "via": "restaurant",
+      "collection": "oeffnungszeiten"
     }
   }
 }

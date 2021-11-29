@@ -36,7 +36,8 @@
       "required": true
     },
     "restaurant": {
-      "model": "restaurant"
+      "model": "restaurant",
+      "via": "offnungszeitens"
     }
   }
 }

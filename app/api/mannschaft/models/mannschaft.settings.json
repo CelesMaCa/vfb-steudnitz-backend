@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "sportarten": {
-      "model": "sportarten"
+      "model": "sportarten",
+      "via": "mannschafts"
     },
     "MName": {
       "type": "string",
@@ -58,6 +59,10 @@
     },
     "adresse": {
       "model": "adresse"
+    },
+    "trainingszeits": {
+      "via": "mannschaft",
+      "collection": "trainingszeit"
     }
   }
 }
